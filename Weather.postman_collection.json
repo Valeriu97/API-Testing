@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "14ddc8da-9f28-46dc-b293-cbc8784f0874",
+		"name": "Weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24003157"
+	},
+	"item": [
+		{
+			"name": "Ex 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=abd4f57e02154fadda2135ab3ec48152&mode=json&units=imperial",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Barcelona"
+						},
+						{
+							"key": "appid",
+							"value": "abd4f57e02154fadda2135ab3ec48152"
+						},
+						{
+							"key": "mode",
+							"value": "json"
+						},
+						{
+							"key": "units",
+							"value": "imperial"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ex 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?q=Bucharest&appid=f2206dfef76cdf49751187003373de91&mode=json&units=metric",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Bucharest"
+						},
+						{
+							"key": "appid",
+							"value": "f2206dfef76cdf49751187003373de91"
+						},
+						{
+							"key": "mode",
+							"value": "json"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ex 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?id=2759794&appid=abd4f57e02154fadda2135ab3ec48152&lang=it",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2759794"
+						},
+						{
+							"key": "appid",
+							"value": "abd4f57e02154fadda2135ab3ec48152"
+						},
+						{
+							"key": "lang",
+							"value": "it"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ex 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1052",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Angel",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Dust",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=update",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ex 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=delete&id=1010",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "delete"
+						},
+						{
+							"key": "id",
+							"value": "1010"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
